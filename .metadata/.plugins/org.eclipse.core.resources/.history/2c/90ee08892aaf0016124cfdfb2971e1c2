@@ -1,0 +1,23 @@
+
+public class func4
+{
+
+	public static void main(String[] args)
+	
+		{		
+			int side = 4;						
+			System.out.print("A triangle with a base of " + side + " a height of" + "has an area of " + areaOfSquare(side));	
+				
+		}	
+				  
+				
+		public static float areaOfSquare(int x) 
+
+		{		
+			float area = x * x;		
+			return area;
+			
+
+	}
+
+}

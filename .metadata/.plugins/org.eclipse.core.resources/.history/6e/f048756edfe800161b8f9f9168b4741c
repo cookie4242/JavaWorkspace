@@ -1,0 +1,99 @@
+import java.util.Random;
+public class DiceCount2 
+{
+
+	public static void main(String[] args) 
+	{
+		int MaxRoll = 6;
+		boolean allRollsAreNotTheSame = true;
+		int End = 5;
+		int[] numbers = RollTheDice();			
+		int uniqueRollValue = numbers[0];
+				
+		//Keep rolling dice while all rolls of 10 dice are not the same
+		for(int i = 1;  allRollsAreNotTheSame; i++)	//i < 4
+		{		
+			System.out.println("inside main for loop run number: " + i);
+			System.out.println("");
+			//Loop through all dice rolls and check if their value is equal to the unique value
+			for (int I = 1; I < End; I++)
+			{
+				System.out.println("I am in slot: " + I + " The value is: " + numbers[I] + " I am comparing to: " + uniqueRollValue );
+				//Is the current dice roll equal to the unique value
+				if (numbers[I] == uniqueRollValue)											
+				{	
+					//THIS IS WHEN IT MATCHES
+					
+					if (I ==4)
+					{
+					allRollsAreNotTheSame = false;
+					System.out.println("it took " + i + " times");
+					}
+				}
+				else
+				{	
+					//WHEN DICE ROLL DOES NOT MATCH
+					numbers = RollTheDice();
+					uniqueRollValue = numbers[0];
+					break;
+				}			
+			}				
+		}
+	}	
+	
+	public static int[] RollTheDice()
+	{
+		int End = 5;
+		int[] numbers = new int[End];
+		int MaxRoll = 6;
+		for (int idx = 0; idx < End; idx++)
+		{	
+			numbers[idx] = (GetRandomNumber(MaxRoll));
+			System.out.print(numbers[idx] + " ");
+		}
+		System.out.println(" ");
+		return numbers;
+	}
+
+	public static int GetRandomNumber(int max)
+	{
+		Random randomGenerator = new Random();
+		return  randomGenerator.nextInt(max);
+	}
+	
+
+	//ON MATCH DO STUFF HERE
+//	if (I == 9)
+//		allRollsAreNotTheSame = false;
+//	else
+//		break;
+
+
+	//		System.out.print(numbers[I]);
+		//	System.out.println(" your numbers were the same ");
+	//	else 
+		//{
+			//System.out.print("your number's were not the same");
+			//break;
+	//	}
+	
+	/*	for (int i = 1; allRollsAreNotTheSame; i++)
+	{
+		//Roll x number of dice
+		System.out.print("getting numbers");
+		for (int idx = 0; idx < End; idx++)
+		{	
+			numbers[idx] = (GetRandomNumber(MaxRoll));
+			System.out.print(numbers[idx] + " ");
+		}	
+		//Check to see if all roles are of the value n
+		for(int idx = 0; idx < End; idx++)
+		{
+			if (numbers[idx] == e)
+				System.out.print(numbers[idx]);
+			else 
+				break;			
+		}		
+*/	
+	
+}

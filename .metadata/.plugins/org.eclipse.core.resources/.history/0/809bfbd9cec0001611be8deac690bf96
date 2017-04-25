@@ -1,0 +1,38 @@
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class exp 
+{
+
+	public static void main(String[] args) 
+	{
+		int number = getIntInput("Enter number: ");
+		int exponent = getIntInput("Enter exponent: ");
+		int answer = 0;
+		
+		for(int i = 0;i < exponent;i++)
+		{
+		  number = number * number;	
+		}
+		System.out.print("answer is" + number);
+	}
+	
+	
+	public static int getIntInput(String consolePrompt)
+	{
+		BufferedReader in = new BufferedReader (new InputStreamReader(System.in));
+		try {
+				System.out.print(consolePrompt);
+				return Integer.parseInt(in.readLine());
+			} catch (NumberFormatException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			return 0;
+		}
+		
+
+}

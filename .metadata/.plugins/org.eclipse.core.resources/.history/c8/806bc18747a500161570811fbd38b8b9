@@ -1,0 +1,26 @@
+
+public class LoopingPractice 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+//		boolean kitten = true;
+//		
+//		while (kitten)
+//		{
+//			System.out.println("KITTENS");
+//		}
+		
+		int	TNT = 42;
+		
+		
+		while (TNT < 1000000)
+		{
+			System.out.println("not Enough TNT!!!!; Current TNT: " + TNT);
+			TNT++;
+		}
+	}
+
+}

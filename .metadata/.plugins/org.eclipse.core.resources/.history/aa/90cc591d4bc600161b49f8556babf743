@@ -1,0 +1,12 @@
+
+public class BeginningObjects 
+{
+	public static void main(String[] args) 
+	{
+		Cactus bob = new Cactus();
+		
+		bob.height = 60;
+		
+		System.out.println(bob.height);
+	}
+}

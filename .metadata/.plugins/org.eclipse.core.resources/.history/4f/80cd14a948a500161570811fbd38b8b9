@@ -1,0 +1,21 @@
+
+public class LoopingPractice 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		boolean running = true;
+		boolean gameOver = false;
+		
+		while (running)
+		{
+			
+			
+			if (gameOver)
+				running = false;
+		}
+		
+	}
+
+}

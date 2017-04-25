@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;bakwards&apos; in &apos;StringPractice.isAPalindrome(...)&apos; to &apos;backwards&apos;&#x0D;&#x0A;- Original project: &apos;StringPractice&apos;&#x0D;&#x0A;- Original element: &apos;StringPractice.isAPalindrome(String).bakwards&apos;&#x0D;&#x0A;- Renamed element: &apos;bakwards&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;bakwards&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{StringPractice.java[StringPractice~isAPalindrome~QString;@bakwards!1868!1894!1875!1882!QString;!0!false" name="backwards" references="true" stamp="1489938620556" version="1.0"/>
+</session>

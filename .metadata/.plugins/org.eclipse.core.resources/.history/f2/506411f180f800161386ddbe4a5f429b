@@ -1,0 +1,76 @@
+import java.util.Random;
+public class DiceRoll3 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		int numberOfDice = 5;
+		int numOfSides = 6;
+		int[] diceRollValues = new int [numberOfDice];
+		
+		diceRollValues = rollDice(numOfSides,numberOfDice);	
+		printRolls(diceRollValues,numberOfDice);
+		compare(diceRollValues , numOfSides , numberOfDice);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static int[] rollDice(int sides, int dice)
+	{
+		int[]  diceRollValues2 = new int[dice];
+		
+		for(int i = 0; i < dice; i++)
+		{
+			diceRollValues2[i] = getOneRoll(sides);
+		}
+		return diceRollValues2;
+	}
+	
+	
+	
+	public static void compare(int[] diceRollValues , int numOfSides , int numberOfDice)
+	{
+		System.out.println("i am comparing");
+	}
+	
+	
+	public static void printRolls(int[] DRV, int NOD)
+	{
+		for (int i = 0; i < NOD; i++)
+			System.out.print(DRV[i]);
+		
+	}
+	
+	diceRollValues[i] == diceRollValues[i +1];
+	
+	
+	public static int getOneRoll(int highestNumber)
+	{	
+		Random randomGenerator = new Random();
+		return(randomGenerator.nextInt(highestNumber));	
+	}
+	
+	
+}

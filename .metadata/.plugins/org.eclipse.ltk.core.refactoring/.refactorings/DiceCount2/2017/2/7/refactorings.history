@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;DiceCount2.f_alse(...)&apos; to &apos;ending&apos;&#x0D;&#x0A;- Original project: &apos;DiceCount2&apos;&#x0D;&#x0A;- Original element: &apos;DiceCount2.f_alse(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;DiceCount2.ending(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;f_alse&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{DiceCount2.java[DiceCount2~f_alse~I" name="ending" references="true" stamp="1487117418319" version="1.0"/>
+</session>

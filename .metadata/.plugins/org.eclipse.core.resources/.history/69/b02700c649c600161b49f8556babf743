@@ -1,0 +1,19 @@
+
+public class Cactus 
+{
+	String color = "Green";
+	int height = 30;
+	String heightUnit = "FT";
+	
+	public boolean CanFlower()
+	{
+		if (height > 4)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

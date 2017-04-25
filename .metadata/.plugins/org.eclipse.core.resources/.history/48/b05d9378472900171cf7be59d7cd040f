@@ -1,0 +1,13 @@
+
+public class Funcions 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		FunctionService Fun = new FunctionService();
+		Fun.areaOfSquare(0);
+
+	}
+
+}

@@ -1,0 +1,31 @@
+
+public class LoopingPractice 
+{
+
+	public static void main(String[] args) 
+	{
+//		boolean running = true;
+//		
+//		while (running)
+//		{
+//			if (gameOver)
+//				running = false;
+//		}
+		
+		boolean kitten = false;
+		
+		while (kitten)
+		{
+			System.out.println("KITTENS");
+		}
+		
+		int	TNT = -345;
+		
+		while (TNT < 1000000)
+		{
+			System.out.println("not Enough TNT!!!!; Current TNT: " + TNT);
+			TNT++;
+		}
+	}
+
+}

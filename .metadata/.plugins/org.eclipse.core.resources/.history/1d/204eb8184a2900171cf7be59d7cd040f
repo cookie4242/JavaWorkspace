@@ -1,0 +1,15 @@
+
+public class FunctionService
+{
+
+	public FunctionService() 
+	{
+		int side = 15;	
+	}
+
+	public static void areaOfSquare(int x)
+	{		
+	int area =  x * x;		
+	System.out.println("a Square with a base of " + x + " and a height of " + x + " has an area of " + area);				
+	}	
+}

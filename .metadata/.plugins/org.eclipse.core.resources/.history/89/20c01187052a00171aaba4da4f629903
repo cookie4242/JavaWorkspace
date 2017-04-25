@@ -1,0 +1,19 @@
+
+public class Funcions 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		FunctionService Fun = new FunctionService();
+		Fun.areaOfSquare(5);
+		
+		
+		
+		int number1 = 138;
+		int number2 = 311;
+		System.out.print(Fun.mult(number1, number2));
+
+	}
+
+}

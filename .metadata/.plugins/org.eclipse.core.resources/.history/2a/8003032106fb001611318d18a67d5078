@@ -1,0 +1,125 @@
+import java.util.Random;
+public class DiceRoll3 
+{
+
+	public static void main(String[] args) 
+	{
+		int numberOfDice = 5;
+		int numOfSides = 6;
+		int[] diceRollValues = new int [numberOfDice];
+		int counter = 0;
+		int high = 0;
+		int low = 1000000;
+		int adv = 0;
+		int loop = 100;
+		
+		for (int idx = 0; idx < loop; idx++)
+		{
+		
+		do {
+				counter++;
+				diceRollValues = rollDice(numOfSides, numberOfDice);
+	//			printRolls(diceRollValues,numberOfDice);
+				
+			}
+		while (!allTheSame(diceRollValues));
+		
+		System.out.println("it took " + String.format("%,d", counter) + " times");
+		adv = adv + counter;
+		if (counter > high)
+			high = counter;
+		if (counter < low)
+			low = counter;
+		counter = 0;
+		
+		}
+		
+		System.out.println("           Low: " +String.format("%,d", low));
+		System.out.println("          high: " +String.format("%,d", high));
+		System.out.println("      Adverage: " + String.format("%,d", adv/loop));
+		System.out.println("Number of runs: " + String.format("%,d", loop));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static int[] rollDice(int sides, int dice)
+	{
+		int[]  diceRollValues2 = new int[dice];
+		
+		for(int i = 0; i < dice; i++)
+		{
+			diceRollValues2[i] = getOneRoll(sides);
+		}
+		return diceRollValues2;
+	}
+	
+	
+	
+	
+	
+	
+	
+	public static int getOneRoll(int highestNumber)
+	{	
+		Random randomGenerator = new Random();
+		return(randomGenerator.nextInt(highestNumber));	
+	}
+	
+	
+	
+	public static boolean allTheSame(int[] diceRollValues)
+	{
+		for (int i = 0; i < (diceRollValues.length - 1); i++)
+		{
+			if (diceRollValues[i] != diceRollValues[i + 1])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
+	
+	public static boolean allTheSameAgain(int[] diceRollValues)
+	{
+		for (int i = 0; i < (diceRollValues.length - 1); i++)
+		{
+			if (diceRollValues[0] != diceRollValues[i])
+			{
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+	
+	public static void printRolls(int[] DRV, int NOD)
+	{
+		for (int i = 0; i < NOD; i++)
+			System.out.print(DRV[i]);
+		System.out.println("");
+	}
+	
+	
+	
+	
+}

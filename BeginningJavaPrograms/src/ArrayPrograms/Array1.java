@@ -1,0 +1,53 @@
+package ArrayPrograms;
+import java.util.Random;
+public class Array1 
+{
+
+	public static void main(String[] args)
+	{
+		int[] numbers = new int[8];
+		
+		Random randomGenerator = new Random();
+	
+			
+		for (int i = 0; i < 8; i++)
+		{
+			int n = randomGenerator.nextInt(100);
+			numbers[i] = n;
+			System.out.print(" i= " + i);
+		    System.out.print(" new " + numbers[i] + "|||");
+		}
+		System.out.println(" ");
+		for (int i = 7; i > -1; i--)
+		{
+			System.out.print(" i= " + i);
+			 System.out.print(" new " + numbers[i]+ "|||");	
+		}
+		
+		System.out.println(" ");
+		System.out.println(" ");
+		
+		int sum = 0;	
+		for (int i = 7; i > -1; i--)
+		{
+			sum = sum + numbers[i];	
+		}
+		System.out.println("adv =" + sum/8f);
+		
+		for (int i = 0; i < 8; i++)
+		{
+			if (i == 7)
+			{
+				System.out.println(" about to print the last number ");
+			}
+			else
+			{
+				
+			}
+			System.out.println("slot number " + i + " has a valu of " + numbers[i] + " ");
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,41 @@
+
+public class For
+{
+
+	public static void main(String[] args)
+	{
+		countdown(45);
+		laugh(5);
+		for(int i4 = 1; i4 < 3/; i4++)
+		{
+			skipCount(7);	
+		}
+			
+	}	
+	
+	public static void countdown(int countdown)
+		{
+			for (int i2 = countdown; i2 > -1; i2--)
+			{
+				System.out.println("count down ends in " + i2);
+			}	
+		}
+	
+	public static void laugh(int maxLaugh)	
+		{
+		for(int i = 0; i < maxLaugh; i++ )
+			{
+				System.out.println("hee hee");
+			}
+		}
+	public static void skipCount(int skipCountBy)
+	{
+		System.out.println(" I can count by " + skipCountBy + "'s");
+		for (int i3 = skipCountBy; i3 < 100; i3 = i3 + skipCountBy)
+		{	
+			System.out.print( " " + i3);	
+		}	
+	}
+	
+	
+}

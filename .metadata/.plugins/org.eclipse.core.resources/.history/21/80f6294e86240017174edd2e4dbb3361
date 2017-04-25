@@ -1,0 +1,8 @@
+
+public class PasswordService {
+
+	public PasswordService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

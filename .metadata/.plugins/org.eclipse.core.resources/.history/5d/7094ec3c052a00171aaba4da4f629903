@@ -1,0 +1,36 @@
+
+public class FunctionService
+{
+
+	public FunctionService() 
+	{
+				
+	}
+
+	public static void areaOfSquare(int x)
+	{		
+	int area =  x * x;		
+	System.out.println("a Square with a base of " + x + " and a height of " + x + " has an area of " + area);				
+	
+	}
+	
+	
+	public static int mult(int number1 , int number2)
+	{	
+	int answer = number1 * number2;	
+	return answer;		
+	}
+	
+	
+	
+	
+	
+	public static void areaOfTriangle(int x, int y)
+
+	{		
+		float area = .5f * x * y;		
+		System.out.println("a triangle with a base of " + x + " and a hight of " + y + " has an area of " + area);	
+		
+	}	
+	
+}

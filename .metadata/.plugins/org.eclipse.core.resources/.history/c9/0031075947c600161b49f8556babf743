@@ -1,0 +1,12 @@
+
+public class Cactus 
+{
+	String color = "Green";
+	int height = 30;
+	String heightUnit = "FT";
+	
+	public static void main(String[] args) 
+	{
+		
+	}
+}

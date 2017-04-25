@@ -1,0 +1,12 @@
+
+public class Cactus 
+{
+	static String color = "Green";
+	int height = 30;
+	String heightUnit = "FT";
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("A Cactus is colored: " + color);
+	}
+}

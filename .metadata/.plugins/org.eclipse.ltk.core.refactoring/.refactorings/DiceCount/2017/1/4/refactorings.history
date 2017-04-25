@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;DiceCount.Func(...)&apos; to &apos;GetRandomNumber&apos;&#x0D;&#x0A;- Original project: &apos;DiceCount&apos;&#x0D;&#x0A;- Original element: &apos;DiceCount.Func(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;DiceCount.GetRandomNumber(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;Func&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{DiceCount.java[DiceCount~Func~I" name="GetRandomNumber" references="true" stamp="1485300464478" version="1.0"/>
+</session>

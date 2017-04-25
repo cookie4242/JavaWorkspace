@@ -1,0 +1,40 @@
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class exp 
+{
+
+	
+	public static void main(String[] args) 
+	{
+		int base = getIntInput("Enter base: ");
+		int exponent = getIntInput("Enter exponent: ");
+		long sum = base;
+		
+		for(int i = 1;i < exponent;i++)
+		{
+		  sum = sum * base;
+		  System.out.println("answer is : " + sum);
+		}
+		System.out.print("answer is : " + sum);
+	}
+	
+	
+	public static int getIntInput(String consolePrompt)
+	{
+		BufferedReader in = new BufferedReader (new InputStreamReader(System.in));
+		try {
+				System.out.print(consolePrompt);
+				return Integer.parseInt(in.readLine());
+			} catch (NumberFormatException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			return 0;
+		}
+		
+
+}

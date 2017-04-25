@@ -1,0 +1,21 @@
+
+public class LoopingPractice 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+		boolean kitten = true;
+		
+		while (kitten)
+		{
+			System.out.print("KITTENS");
+		}
+		
+		
+		
+
+	}
+
+}

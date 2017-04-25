@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+
+/**
+ * @author krisa
+ *
+ */
+public class party {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	int cigars = 60;	
+		
+	boolean	weekend = false;
+		
+	if((weekend == true) && (cigars > 39))	
+		{
+		System.out.print("success1");	
+		}
+	
+	else
+		{
+		if (weekend == false && cigars > 39 && cigars < 61)
+	 
+			{
+			System.out.print("success2");	
+			}
+	    else	
+	    	{
+	    	System.out.print ("Awwww Nuts");	
+	    	}
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}

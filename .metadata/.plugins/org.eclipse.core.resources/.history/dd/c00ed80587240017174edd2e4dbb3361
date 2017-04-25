@@ -1,0 +1,14 @@
+
+public class PasswordService 
+{
+
+	public PasswordService() 
+	{
+		if (VerifyPassword("43451!EE2q"))
+			System.out.println("Access Granted!!!");
+		else
+			System.out.println("You Have Been Denied!!!");
+	}
+	
+
+}
